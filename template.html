@@ -5,11 +5,48 @@
     <meta name="viewport" content = "width=device-width, initi"
     <title>Bootstrap</title>
     <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <section class="container">
-
+    <section class="container" style="padding-top:100px;">
+<h1>Button Drop Down</h1>
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle glyphicon glyphicon-cloud " data-toggle="dropdown" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+  <ul class="dropdown-menu" role="menu">
+    <li><a class="glyphicon glyphicon-tint
+      " href="#">Action</a></li>
+    <li><a class="glyphicon glyphicon-star" href="#">Another action</a></li>
+    <li><a class="glyphicon glyphicon-star-empty" href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-default">Dropup</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <!-- Dropdown menu links -->
+  </ul>
+</div>
 </section>
     <script src="./lib/jquery-3.1.1.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
